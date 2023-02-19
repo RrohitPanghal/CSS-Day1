@@ -1,0 +1,61 @@
+p{
+    color: white;
+}
+html {
+    font-size: 22px;
+} body {
+    background-color: black;
+    color: aliceblue;
+}
+li {
+    list-style-type:lower-roman;
+}
+
+/* .special{
+ color:brown;
+ font-weight: bold;
+} */
+span.special,li.special{
+    color: orange;
+    font-weight: bold;
+}
+/*
+descendant combinator
+*/
+li em{
+    color: blueviolet;
+}
+/*
+adjacent combinator
+*/
+h1+p{
+    font-size: 100%;
+}
+/*
+psudo class selector
+*/
+a:hover{
+    color: chartreuse;
+    text-decoration: none;
+}
+
+body h1+p .special{
+    color: white;
+    background-color: gold;
+    padding: auto;
+}
+/*
+id css is used from this
+*/
+#heading{
+    color: red;
+}
+p#one{
+    color: rebeccapurple;
+}
+/*
+attribute selector
+*/
+li[class="b"]{
+    font-size: 150%;
+}
